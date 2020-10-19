@@ -1,0 +1,623 @@
+inherit: []
+flux:
+  - id: tribunes&opinions
+    description: Les tribunes du moment, tous journaux confondus
+    remove: Tribune de Genève AND Tribune de Lyon AND Groupe Capitales AND latribune
+      AND tribune du stade AND herault-tribune.com
+    input:
+      - https://www.lemonde.fr/idees-tribunes/rss_full.xml
+      - https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ
+      - https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ
+      - https://www.lemonde.fr/idees-chroniques/rss_full.xml
+      - googlenewsfr:tribune
+    keep_only: ""
+  - id: Inrap_musees
+    description: inrap
+    remove: ""
+    input:
+      - https://www.inrap.fr/rss.xml
+      - https://musee-archeologienationale.fr/rss.xml
+    keep_only: ""
+  - id: fact_checking
+    description: Les Décodeurs, Checknews, les Surligneurs, ...
+    remove: ""
+    input:
+      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
+      - http://rss.liberation.fr/rss/100893/
+      - https://lessurligneurs.eu/feed/
+      - https://www.rtl.fr/podcast/fact-checking.xml
+      - http://radiofrance-podcast.net/podcast09/rss_12249.xml
+      - https://www.youtube.com/channel/UCRAbwEqGDnUBt_gPOkplGBA/videos
+      - https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
+    keep_only: ""
+  - id: utopies&innovation_sociale
+    description: Corporate Rebels, Wedemain, Reporterre, ...
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCm5wThREh298TkK8hCT9HuA
+      - https://www.youtube.com/user/Ashokavideos
+      - https://www.wedemain.fr/xml/syndication.rss
+      - https://reporterre.net/spip.php?page=backend-simple
+      - https://www.monde-diplomatique.fr/rss/
+      - https://corporate-rebels.com/rss/
+      - tribunes_utopies
+      - _utopies_filtres
+      - https://lagedefaire-lejournal.fr/feed/
+      - https://www.bastamag.net/spip.php?page=backend
+    keep_only: ""
+  - id: medias_independants
+    description: basta, reporterre, heidinews...
+    remove: ""
+    input:
+      - https://www.bastamag.net/spip.php?page=backend
+      - https://reporterre.net/spip.php?page=backend-simple
+      - https://lagedefaire-lejournal.fr/feed/
+      - https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ
+      - https://www.youtube.com/channel/UCVeMw72tepFl1Zt5fvf9QKQ
+      - https://la-bas.org/spip.php?page=backend
+      - https://lvsl.fr/feed/
+      - https://theconversation.com/fr/articles.atom
+      - https://www.acrimed.org/spip.php?page=backend
+      - http://mouvements.info/feed/
+      - https://www.institut-rousseau.fr/feed/
+      - http://www.atterres.org/rss.xml
+      - https://www.fakirpresse.info/spip.php?page=backend
+      - https://www.heidi.news/sante.rss
+      - https://www.heidi.news/climat.rss
+      - https://www.heidi.news/economie.rss
+      - https://www.heidi.news/sciences.rss
+      - https://www.heidi.news/innovation.rss
+      - https://www.heidi.news/culture.rss
+      - "https://www.heidi.news/education.rss\r"
+    keep_only: ""
+  - id: journalisme_de_solution
+    description: Carenews, Impact(s), ...
+    remove: ""
+    input:
+      - https://www.carenews.com/acteur-rss/59986
+      - https://www.carenews.com/acteur-rss/59985
+      - https://impact-s.fr/feed/
+      - https://kaizen-magazine.com/flux-rss-kaizen-magazine/
+      - https://feeds.acast.com/public/shows/5d47e7d3acdd5ca230211bf9
+      - http://radiofrance-podcast.net/podcast09/rss_14514.xml
+      - https://feeds.acast.com/public/shows/la-compagnie-generale-des-autres
+    keep_only: ""
+  - id: societe&futur
+    description: usbek, wedemain, ...
+    remove: ""
+    input:
+      - https://usbeketrica.com/rss
+      - tribunes_utopies
+      - _utopies_filtres
+      - https://corporate-rebels.com/rss/
+      - https://www.monde-diplomatique.fr/rss/
+      - https://www.wedemain.fr/xml/syndication.rss
+    keep_only: ""
+  - id: google_news_fr
+    description: Les news en une de Google News France
+    remove: ""
+    input:
+      - googlenewsfr
+    keep_only: ""
+  - id: google_news_us
+    description: Les news en une de Google News US
+    remove: ""
+    input:
+      - googlenewsen
+    keep_only: ""
+  - id: mediapart
+    description: mediapart
+    remove: ""
+    input:
+      - https://www.mediapart.fr/articles/feed
+    keep_only: ""
+  - id: mediapart_podcasts
+    description: podcasts de mediapart
+    remove: ""
+    input:
+      - https://www.mediapart.fr/journal/podcasts/rss
+    keep_only: ""
+  - id: mediapart_vidéos
+    description: Vidéos de médiapart
+    remove: ""
+    input:
+      - www.youtube.com/user/mediapart/
+    keep_only: ""
+  - id: lemonde_toutes_rubriques
+    description: Le Monde - Tous les derniers articles
+    remove: ""
+    input:
+      - https://www.lemonde.fr/rss/une.xml
+      - https://www.lemonde.fr/international/rss_full.xml
+      - https://www.lemonde.fr/economie/rss_full.xml
+      - https://www.lemonde.fr/politique/rss_full.xml
+      - https://www.lemonde.fr/culture/rss_full.xml
+      - https://www.lemonde.fr/sport/rss_full.xml
+      - https://www.lemonde.fr/planete/rss_full.xml
+      - https://www.lemonde.fr/pixels/rss_full.xml
+      - https://www.lemonde.fr/sciences/rss_full.xml
+      - https://www.lemonde.fr/idees/rss_full.xml
+      - https://www.lemonde.fr/m-le-mag/rss_full.xml
+      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
+      - https://www.lemonde.fr/societe/rss_full.xml
+      - https://www.lemonde.fr/rss/en_continu.xml
+      - https://www.lemonde.fr/ameriques/rss_full.xml
+      - https://www.lemonde.fr/asie-pacifique/rss_full.xml
+      - https://www.lemonde.fr/afrique/rss_full.xml
+    keep_only: ""
+  - id: newyorktimes_une
+    description: La une du New York Times
+    remove: ""
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+    keep_only: ""
+  - id: newyorktimes_tout
+    description: Tous les derniers articles du New York Times
+    remove: ""
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+      - https://www.nytimes.com/services/xml/rss/nyt/Health.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml
+    keep_only: ""
+  - id: videos_actu
+    description: Les vidéos d'actu généraliste
+    remove: ""
+    input:
+      - https://www.lemonde.fr/videos/rss_full.xml
+      - https://www.youtube.com/user/franceinfo
+      - https://www.youtube.com/channel/UCSKdvgqdnj72_SLggp7BDTg/videos
+    keep_only: ""
+  - id: one_zero
+    description: tech and science
+    remove: ""
+    input:
+      - https://onezero.medium.com/feed
+    keep_only: ""
+  - id: science
+    description: Vidéos, podcasts et articles sur la science
+    remove: ""
+    input:
+      - podcasts_science
+      - videos_science
+      - presse_science
+    keep_only: ""
+  - id: videos_france_culture
+    description: Les vidéos de France Culture
+    remove: ""
+    input:
+      - https://www.youtube.com/user/FranceCulture
+    keep_only: ""
+  - id: videos_histoire
+    description: Les vidéos des youtubers d'histoire (@notabene, ...)
+    remove: ""
+    input:
+      - https://www.youtube.com/user/notabenemovies
+      - https://www.youtube.com/user/InrapOfficiel/videos
+      - https://www.youtube.com/channel/UC7ktqoCpxEbP9TV-xQLTonQ
+      - https://www.youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg/videos
+      - https://www.youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q
+    keep_only: ""
+  - id: product_management
+    description: Articles (thiga, octo, ...) et conférences sur le product management
+    remove: ""
+    input:
+      - https://blog.thiga.co/feed/
+      - _product
+      - product_videos
+    keep_only: ""
+  - id: france_inter
+    description: La une de France Inter
+    remove: ""
+    input:
+      - https://www.franceinter.fr/rss/a-la-une.xml
+    keep_only: ""
+  - id: videos_arte_decouverte
+    description: Les vidéos youtube d'Arte découverte
+    remove: ""
+    input:
+      - https://www.youtube.com/user/ARTE
+    keep_only: ""
+  - id: videos_arte
+    description: Les vidéos youtube d'Arte
+    remove: ""
+    input:
+      - https://www.youtube.com/user/ARTEplus7
+    keep_only: ""
+  - id: creativite
+    description: Articles et vidéos pour éveiller votre créativité
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UC5JNoczz7kh4jZ-9mtq0yJQ
+    keep_only: ""
+  - id: tech_et_jeux
+    description: MKBHD, Nowtech, Pixels, ...
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCVwG9JHqGLfEO-4TkF-lf2g
+      - https://www.youtube.com/user/marquesbrownlee
+      - https://www.youtube.com/channel/UCYnvxJ-PKiGXo_tYXpWAC-w
+      - https://www.youtube.com/channel/UCRjSO-juFtngAeJGJRMdIZw
+      - https://www.youtube.com/channel/UC4peNo-31r7fhQZgu0_JRIA
+      - https://www.lemonde.fr/pixels/rss_full.xml
+    keep_only: ""
+  - id: podcasts_science
+    description: Les podcasts scientifiques en français
+    remove: ""
+    input:
+      - http://radiofrance-podcast.net/podcast09/rss_14312.xml
+      - http://radiofrance-podcast.net/podcast09/rss_20902.xml
+    keep_only: ""
+  - id: videos_science
+    description: Les chaines youtube scientifiques en français
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCcziTK2NKeWtWQ6kB5tmQ8Q
+      - https://www.youtube.com/user/scilabus
+      - https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A
+      - https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA
+      - https://www.youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw
+      - https://www.youtube.com/channel/UCLXDNUOO3EQ80VmD9nQBHPg
+      - https://www.youtube.com/user/ScienceEtonnante
+      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
+      - https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q
+      - https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
+      - https://www.youtube.com/channel/UCAxljKT0ujiJZhGC8Ood7mw/videos
+    keep_only: ""
+  - id: videos_science&culture_generale
+    description: Vidéos sur la science, l'histoire, la linguistique, ...
+    remove: ""
+    input:
+      - videos_science
+      - https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
+      - https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
+    keep_only: ""
+  - id: presse_science
+    description: Blogs, sites et newspapers scientifiques
+    remove: bon plan
+    input:
+      - https://www.lemonde.fr/sciences/rss_full.xml
+      - https://www.futura-sciences.com/rss/actualites.xml
+      - http://effetsdeterre.fr/feed/
+      - googlenewsen:"ancient-origins.net"
+    keep_only: ""
+  - id: nyt_science
+    description: New York Times - Science
+    remove: coronavirus live update AND live coronavirus
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+    keep_only: ""
+  - id: covid_science
+    description: Les news scientifiques sur le Covid
+    remove: ""
+    input:
+      - presse_science
+      - podcasts_science
+      - videos_science
+      - https://www.statnews.com/feed/
+      - https://www.lemonde.fr/blog/realitesbiomedicales/feed/
+      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+      - covid_preprint_fr
+      - covid_preprint_en
+    keep_only: covid OR corona OR coronavirus OR sars
+  - id: covid_preprints
+    description: Les news sur les derniers preprints sur le covid
+    remove: ""
+    input:
+      - covid_preprint_en
+      - covid_preprint_fr
+    keep_only: ""
+  - id: covid_preprint_en
+    description: ""
+    remove: i24news
+    input:
+      - googlenewsen:preprint covid
+    keep_only: news-medical.net OR nature.com OR nytimes.com OR yale.edu OR
+      medscape.com OR medium.com OR phys.org OR nationalgeogr OR
+      healthnewsreview.org OR healthnewsreview.org OR www.the-scientist.com
+  - id: covid_preprint_fr
+    description: ""
+    remove: i24news
+    input:
+      - googlenewsfr:preprint covid
+    keep_only: ""
+  - id: covid_interessant
+    description: ""
+    remove: i24news
+    input:
+      - covid_science
+      - tribunes&opinions
+    keep_only: covid
+  - id: datascience
+    description: ""
+    remove: ""
+    input:
+      - https://towardsdatascience.com/feed
+      - https://www.youtube.com/channel/UCY8mzqqGwl5_bTpBY9qLMAA
+      - https://www.youtube.com/channel/UCu-El65PtQm46aSbXkzykYQ
+    keep_only: ""
+  - id: dev
+    description: Articles et vidéos sur le développement logiciel
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCsVPQfo5RZErDL41LoWvk0A
+      - https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+      - https://www.youtube.com/user/grafikarttv
+      - https://www.youtube.com/channel/UCgJERWtcvu-JiPq5wBkYF1g
+      - https://blog.engineering.publicissapient.fr/feed/
+      - https://blog.octo.com/feed/
+      - https://blog.zenika.com/feed/
+      - https://www.youtube.com/channel/UCY_guo_AYBs0cIkeMVc16iw
+    keep_only: ""
+  - id: lemonde_science
+    description: ""
+    remove: ""
+    input:
+      - lemonde_toutes_rubriques
+    keep_only: science OR scientifique
+  - id: contact_tracing_en
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:contact tracing
+    keep_only: ""
+  - id: unit_economics
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:"unit economics"
+      - googlenewsen:"Lifetime value"
+    keep_only: ""
+  - id: paleoanthropology
+    description: Dernières news sur la paléoantropologie (anglophone)
+    remove: explica AND gizmodo AND discovermagazine AND tor.com
+    input:
+      - googlenewsen:"hominins"
+      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
+      - https://www.youtube.com/channel/UCpZODzFU3297WtWnnB8j6vQ
+    keep_only: ""
+  - id: paleogenetics
+    description: ""
+    remove: explica AND gizmodo AND i24news
+    input:
+      - googlenewsen:paleogenetics
+    keep_only: ""
+  - id: datajournalism&dataviz
+    description: Data journalisme (anglophone)
+    remove: ""
+    input:
+      - https://datajournalism.com/read/rss/longreads.xml
+      - https://medium.com/feed/tag/data-visualization
+      - _datajournalism&dataviz
+      - googlenewsen:"data artist"
+      - https://medium.com/feed/nightingale
+      - https://flowingdata.com/feed
+    keep_only: ""
+  - id: notebooks
+    description: jupyter / zeppelin
+    remove: ""
+    input:
+      - googlenewsen:"jupyter"
+      - googlenewsen:"apache zeppelin"
+    keep_only: ""
+  - id: _datajournalism&dataviz
+    description: ""
+    remove: ""
+    input:
+      - https://whatsnewinpublishing.com/feed/
+    keep_only: charts OR dataviz OR data visual OR data journalism
+  - id: lemonde_une
+    description: La une du Monde
+    remove: ""
+    input:
+      - https://www.lemonde.fr/rss/une.xml
+    keep_only: ""
+  - id: covid_data
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:data covid
+    keep_only: ""
+  - id: ultra_trail_fr
+    description: ""
+    remove: lci AND figaro AND i24news AND lesechos
+    input:
+      - googlenewsfr:"ultra trail"
+    keep_only: ""
+  - id: ultra_trail_en
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:"ultra trail"
+    keep_only: ""
+  - id: ultra_trail
+    description: ""
+    remove: ""
+    input:
+      - ultra_trail_fr
+      - ultra_trail_en
+    keep_only: ""
+  - id: _product_videos
+    description: ""
+    remove: ""
+    input:
+      - https://www.youtube.com/user/GotoConferences
+      - www.youtube.com/user/FutureLondonAcademy/
+    keep_only: product
+  - id: product_videos
+    description: "mind the product, lpc, "
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCiT1BmYvOBsEvU9iw0076Sw
+      - https://www.youtube.com/channel/UCO0OJyqS_POidtPlaEoR95Q
+      - https://www.youtube.com/channel/UCWyLBK3Wkyvsg9qIpYXqagg
+      - https://www.youtube.com/channel/UC6hlQ0x6kPbAGjYkoz53cvA
+      - https://www.youtube.com/user/leanstartupconf/videos
+      - https://www.youtube.com/channel/UCBJ13f36Crnj5rWEyXCCp4A
+      - _product_videos
+    keep_only: ""
+  - id: _product
+    description: ""
+    remove: ""
+    input:
+      - https://blog.octo.com/feed/
+      - https://blog.engineering.publicissapient.fr/feed/
+      - https://blog.zenika.com/feed/
+      - pm_insider
+    keep_only: product management OR product manager
+  - id: economie
+    description: Economie
+    remove: ""
+    input:
+      - googlenewsen:economist
+      - https://www.youtube.com/channel/UCyJDHgrsUKuWLe05GvC2lng
+      - https://www.youtube.com/channel/UCIQGSp79vVch0vO3Efqif_w
+      - https://www.youtube.com/channel/UCu6mFdACj_quODcUujiT62Q/videos
+      - https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ
+    keep_only: ""
+  - id: stopcovid
+    description: Les dernières évolutions sur l'appli StopCovid
+    remove: ""
+    input:
+      - googlenewsfr:stopcovid
+    keep_only: ""
+  - id: test
+    description: ""
+    remove: ""
+    input:
+      - http://rss.liberation.fr/rss/18/
+    keep_only: ""
+  - id: test2
+    description: ""
+    remove: ""
+    input:
+      - https://blog.octo.com/feed/
+      - https://blog.engineering.publicissapient.fr/feed/
+      - https://blog.zenika.com/feed/
+    keep_only: florence aubenas
+  - id: test_reporterre
+    description: ""
+    remove: ""
+    input:
+      - https://reporterre.net/spip.php?page=backend-simple
+    keep_only: ""
+  - id: tribunes_economistes
+    description: Tribunes d'économistes
+    remove: ""
+    input:
+      - tribunes&opinions
+    keep_only: économiste
+  - id: tribunes_utopies
+    description: Tribunes sur les sujets de l'utopie, de l'économie sociale, ou des communs
+    remove: ""
+    input:
+      - tribunes&opinions
+    keep_only: utopi OR économie sociale OR communs OR participati OR cooperati
+  - id: _utopies_filtres
+    description: ""
+    remove: ""
+    input:
+      - https://www.politis.fr/rss.xml
+      - https://www.mediacites.fr/feed/
+    keep_only: communs OR monde d'après OR coopérative OR coopératif OR
+      participative OR participatif OR utopi
+  - id: tribunes_stopcovid
+    description: Tribunes publiées en rapport avec l'app stopcovid
+    remove: ""
+    input:
+      - tribunes&opinions
+    keep_only: stopcovid
+  - id: nicolas_colin
+    description: dessous des cartes, numériques et la chine
+    remove: choléra
+    input:
+      - googlenewsfr:"nicolas colin"
+    keep_only: ""
+  - id: lemonde_jo
+    description: Le monde - selection Josephine
+    remove: ""
+    input:
+      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
+      - https://www.lemonde.fr/pixels/rss_full.xml
+      - https://www.lemonde.fr/planete/rss_full.xml
+      - https://www.lemonde.fr/amour/rss_full.xml
+    keep_only: ""
+  - id: pm_insider
+    description: pm insider - medium
+    remove: ""
+    input:
+      - https://medium.com/feed/pminsider
+    keep_only: ""
+  - id: capitalocene
+    description: Capitalocène - FR et EN
+    remove: ""
+    input:
+      - googlenewsfr:"capitalocene"
+      - googlenewsen:"capitalocene"
+    keep_only: ""
+  - id: replicables
+    description: replicables
+    remove: ""
+    input:
+      - https://www.shareable.net/feed/
+    keep_only: ""
+  - id: data_catalog
+    description: spécial
+    remove: coleofduty AND Data Catalog Market
+    input:
+      - googlenewsen:"data catalog"
+      - https://medium.com/feed/tag/data
+    keep_only: data catalog
+  - id: data_dashboard
+    description: spécial
+    remove: ""
+    input:
+      - https://medium.com/feed/tag/data
+    keep_only: dashboard
+  - id: bidonville
+    description: ""
+    remove: ""
+    input:
+      - googlenewsfr:bidonville
+    keep_only: bidonville
+  - id: community_land_trust
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:"Community Land Trust"
+      - googlenewsfr:"Community Land Trust"
+    keep_only: ""
+  - id: organisme_foncier_solidaire
+    description: ""
+    remove: ""
+    input:
+      - googlenewsfr:"Organisme Foncier Solidaire"
+    keep_only: ""
+  - id: weco
+    description: ""
+    remove: ""
+    input:
+      - googlenewsfr:"weco" solidaire
+    keep_only: ""
+  - id: bugs
+    description: ""
+    remove: ""
+    input:
+      - http://www.lcp.fr/taxonomy/term/1857/all/feed
+    keep_only: ""
+  - id: bayesian
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:"Bayesian inference"
+    keep_only: ""
+  - id: ltv
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:"Lifetime value"
+    keep_only: ""
