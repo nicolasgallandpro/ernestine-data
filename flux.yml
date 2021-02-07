@@ -1,4 +1,3 @@
-inherit: []
 flux:
   - id: tribunes&opinions
     description: Les tribunes du moment, tous journaux confondus
@@ -17,18 +16,6 @@ flux:
     input:
       - https://www.inrap.fr/rss.xml
       - https://musee-archeologienationale.fr/rss.xml
-    keep_only: ""
-  - id: fact_checking
-    description: Les Décodeurs, Checknews, les Surligneurs, ...
-    remove: ""
-    input:
-      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
-      - http://rss.liberation.fr/rss/100893/
-      - https://lessurligneurs.eu/feed/
-      - https://www.rtl.fr/podcast/fact-checking.xml
-      - http://radiofrance-podcast.net/podcast09/rss_12249.xml
-      - https://www.youtube.com/channel/UCRAbwEqGDnUBt_gPOkplGBA/videos
-      - https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
     keep_only: ""
   - id: utopies&innovation_sociale
     description: Corporate Rebels, Wedemain, Reporterre, ...
@@ -68,7 +55,8 @@ flux:
       - https://www.heidi.news/sciences.rss
       - https://www.heidi.news/innovation.rss
       - https://www.heidi.news/culture.rss
-      - "https://www.heidi.news/education.rss\r"
+      - https://www.heidi.news/education.rss
+      - "https://reflets.info/feeds/public\r"
     keep_only: ""
   - id: journalisme_de_solution
     description: Carenews, Impact(s), ...
@@ -93,77 +81,6 @@ flux:
       - https://www.monde-diplomatique.fr/rss/
       - https://www.wedemain.fr/xml/syndication.rss
     keep_only: ""
-  - id: google_news_fr
-    description: Les news en une de Google News France
-    remove: ""
-    input:
-      - googlenewsfr
-    keep_only: ""
-  - id: google_news_us
-    description: Les news en une de Google News US
-    remove: ""
-    input:
-      - googlenewsen
-    keep_only: ""
-  - id: mediapart
-    description: mediapart
-    remove: ""
-    input:
-      - https://www.mediapart.fr/articles/feed
-    keep_only: ""
-  - id: mediapart_podcasts
-    description: podcasts de mediapart
-    remove: ""
-    input:
-      - https://www.mediapart.fr/journal/podcasts/rss
-    keep_only: ""
-  - id: mediapart_vidéos
-    description: Vidéos de médiapart
-    remove: ""
-    input:
-      - www.youtube.com/user/mediapart/
-    keep_only: ""
-  - id: lemonde_toutes_rubriques
-    description: Le Monde - Tous les derniers articles
-    remove: ""
-    input:
-      - https://www.lemonde.fr/rss/une.xml
-      - https://www.lemonde.fr/international/rss_full.xml
-      - https://www.lemonde.fr/economie/rss_full.xml
-      - https://www.lemonde.fr/politique/rss_full.xml
-      - https://www.lemonde.fr/culture/rss_full.xml
-      - https://www.lemonde.fr/sport/rss_full.xml
-      - https://www.lemonde.fr/planete/rss_full.xml
-      - https://www.lemonde.fr/pixels/rss_full.xml
-      - https://www.lemonde.fr/sciences/rss_full.xml
-      - https://www.lemonde.fr/idees/rss_full.xml
-      - https://www.lemonde.fr/m-le-mag/rss_full.xml
-      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
-      - https://www.lemonde.fr/societe/rss_full.xml
-      - https://www.lemonde.fr/rss/en_continu.xml
-      - https://www.lemonde.fr/ameriques/rss_full.xml
-      - https://www.lemonde.fr/asie-pacifique/rss_full.xml
-      - https://www.lemonde.fr/afrique/rss_full.xml
-    keep_only: ""
-  - id: newyorktimes_une
-    description: La une du New York Times
-    remove: ""
-    input:
-      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
-    keep_only: ""
-  - id: newyorktimes_tout
-    description: Tous les derniers articles du New York Times
-    remove: ""
-    input:
-      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/World.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/US.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
-      - https://www.nytimes.com/services/xml/rss/nyt/Health.xml
-      - https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml
-    keep_only: ""
   - id: videos_actu
     description: Les vidéos d'actu généraliste
     remove: ""
@@ -185,6 +102,99 @@ flux:
       - podcasts_science
       - videos_science
       - presse_science
+    keep_only: ""
+  - id: podcasts_science
+    description: Les podcasts scientifiques en français
+    remove: ""
+    input:
+      - http://radiofrance-podcast.net/podcast09/rss_14312.xml
+      - http://radiofrance-podcast.net/podcast09/rss_20902.xml
+    keep_only: ""
+  - id: videos_science
+    description: Les chaines youtube scientifiques en français
+    remove: ""
+    input:
+      - https://www.youtube.com/channel/UCcziTK2NKeWtWQ6kB5tmQ8Q
+      - https://www.youtube.com/user/scilabus
+      - https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A
+      - https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA
+      - https://www.youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw
+      - https://www.youtube.com/channel/UCLXDNUOO3EQ80VmD9nQBHPg
+      - https://www.youtube.com/user/ScienceEtonnante
+      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
+      - https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q
+      - https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
+      - https://www.youtube.com/channel/UCAxljKT0ujiJZhGC8Ood7mw/videos
+    keep_only: ""
+  - id: presse_science
+    description: Blogs, sites et newspapers scientifiques
+    remove: bon plan
+    input:
+      - https://www.lemonde.fr/sciences/rss_full.xml
+      - https://www.futura-sciences.com/rss/actualites.xml
+      - http://effetsdeterre.fr/feed/
+      - googlenewsen:"ancient-origins.net"
+    keep_only: ""
+  - id: nyt_science
+    description: New York Times - Science
+    remove: coronavirus live update AND live coronavirus
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+    keep_only: ""
+  - id: hacker_news
+    description: ""
+    remove: ""
+    input:
+      - https://news.ycombinator.com/rss
+    keep_only: ""
+  - id: datascience
+    description: ""
+    remove: ""
+    input:
+      - https://towardsdatascience.com/feed
+      - https://www.youtube.com/channel/UCY8mzqqGwl5_bTpBY9qLMAA
+      - https://www.youtube.com/channel/UCu-El65PtQm46aSbXkzykYQ
+    keep_only: ""
+  - id: paleoanthropology
+    description: Dernières news sur la paléoantropologie (anglophone)
+    remove: explica AND gizmodo AND discovermagazine AND tor.com
+    input:
+      - googlenewsen:"hominins"
+      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
+      - https://www.youtube.com/channel/UCpZODzFU3297WtWnnB8j6vQ
+    keep_only: ""
+  - id: archeologie
+    description: ""
+    remove: ""
+    input:
+      - googlenewsen:archaeologist
+      - googlenewsfr:archeologue
+      - https://www.sapiens.org/category/archaeology/feed/
+    keep_only: ""
+  - id: paleogenetics
+    description: ""
+    remove: explica AND gizmodo AND i24news
+    input:
+      - googlenewsen:paleogenetics
+    keep_only: ""
+  - id: datajournalism&dataviz
+    description: Data journalisme (anglophone)
+    remove: ""
+    input:
+      - https://datajournalism.com/read/rss/longreads.xml
+      - https://medium.com/feed/tag/data-visualization
+      - _datajournalism&dataviz
+      - googlenewsen:"data artist"
+      - https://medium.com/feed/nightingale
+      - https://flowingdata.com/feed
+    keep_only: ""
+  - id: notebooks
+    description: jupyter / zeppelin / polynote
+    remove: ""
+    input:
+      - googlenewsen:"jupyter"
+      - googlenewsen:"apache zeppelin"
+      - googlenewsen:"polynote notebook"
     keep_only: ""
   - id: videos_france_culture
     description: Les vidéos de France Culture
@@ -245,29 +255,6 @@ flux:
       - https://www.youtube.com/channel/UC4peNo-31r7fhQZgu0_JRIA
       - https://www.lemonde.fr/pixels/rss_full.xml
     keep_only: ""
-  - id: podcasts_science
-    description: Les podcasts scientifiques en français
-    remove: ""
-    input:
-      - http://radiofrance-podcast.net/podcast09/rss_14312.xml
-      - http://radiofrance-podcast.net/podcast09/rss_20902.xml
-    keep_only: ""
-  - id: videos_science
-    description: Les chaines youtube scientifiques en français
-    remove: ""
-    input:
-      - https://www.youtube.com/channel/UCcziTK2NKeWtWQ6kB5tmQ8Q
-      - https://www.youtube.com/user/scilabus
-      - https://www.youtube.com/channel/UC0NCbj8CxzeCGIF6sODJ-7A
-      - https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA
-      - https://www.youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw
-      - https://www.youtube.com/channel/UCLXDNUOO3EQ80VmD9nQBHPg
-      - https://www.youtube.com/user/ScienceEtonnante
-      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
-      - https://www.youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q
-      - https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
-      - https://www.youtube.com/channel/UCAxljKT0ujiJZhGC8Ood7mw/videos
-    keep_only: ""
   - id: videos_science&culture_generale
     description: Vidéos sur la science, l'histoire, la linguistique, ...
     remove: ""
@@ -275,21 +262,6 @@ flux:
       - videos_science
       - https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
       - https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
-    keep_only: ""
-  - id: presse_science
-    description: Blogs, sites et newspapers scientifiques
-    remove: bon plan
-    input:
-      - https://www.lemonde.fr/sciences/rss_full.xml
-      - https://www.futura-sciences.com/rss/actualites.xml
-      - http://effetsdeterre.fr/feed/
-      - googlenewsen:"ancient-origins.net"
-    keep_only: ""
-  - id: nyt_science
-    description: New York Times - Science
-    remove: coronavirus live update AND live coronavirus
-    input:
-      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
     keep_only: ""
   - id: covid_science
     description: Les news scientifiques sur le Covid
@@ -332,14 +304,6 @@ flux:
       - covid_science
       - tribunes&opinions
     keep_only: covid
-  - id: datascience
-    description: ""
-    remove: ""
-    input:
-      - https://towardsdatascience.com/feed
-      - https://www.youtube.com/channel/UCY8mzqqGwl5_bTpBY9qLMAA
-      - https://www.youtube.com/channel/UCu-El65PtQm46aSbXkzykYQ
-    keep_only: ""
   - id: dev
     description: Articles et vidéos sur le développement logiciel
     remove: ""
@@ -359,50 +323,12 @@ flux:
     input:
       - lemonde_toutes_rubriques
     keep_only: science OR scientifique
-  - id: contact_tracing_en
-    description: ""
-    remove: ""
-    input:
-      - googlenewsen:contact tracing
-    keep_only: ""
   - id: unit_economics
     description: ""
     remove: ""
     input:
       - googlenewsen:"unit economics"
       - googlenewsen:"Lifetime value"
-    keep_only: ""
-  - id: paleoanthropology
-    description: Dernières news sur la paléoantropologie (anglophone)
-    remove: explica AND gizmodo AND discovermagazine AND tor.com
-    input:
-      - googlenewsen:"hominins"
-      - https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos
-      - https://www.youtube.com/channel/UCpZODzFU3297WtWnnB8j6vQ
-    keep_only: ""
-  - id: paleogenetics
-    description: ""
-    remove: explica AND gizmodo AND i24news
-    input:
-      - googlenewsen:paleogenetics
-    keep_only: ""
-  - id: datajournalism&dataviz
-    description: Data journalisme (anglophone)
-    remove: ""
-    input:
-      - https://datajournalism.com/read/rss/longreads.xml
-      - https://medium.com/feed/tag/data-visualization
-      - _datajournalism&dataviz
-      - googlenewsen:"data artist"
-      - https://medium.com/feed/nightingale
-      - https://flowingdata.com/feed
-    keep_only: ""
-  - id: notebooks
-    description: jupyter / zeppelin
-    remove: ""
-    input:
-      - googlenewsen:"jupyter"
-      - googlenewsen:"apache zeppelin"
     keep_only: ""
   - id: _datajournalism&dataviz
     description: ""
@@ -478,18 +404,6 @@ flux:
       - https://www.youtube.com/channel/UCIQGSp79vVch0vO3Efqif_w
       - https://www.youtube.com/channel/UCu6mFdACj_quODcUujiT62Q/videos
       - https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ
-    keep_only: ""
-  - id: stopcovid
-    description: Les dernières évolutions sur l'appli StopCovid
-    remove: ""
-    input:
-      - googlenewsfr:stopcovid
-    keep_only: ""
-  - id: test
-    description: ""
-    remove: ""
-    input:
-      - http://rss.liberation.fr/rss/18/
     keep_only: ""
   - id: test2
     description: ""
@@ -620,4 +534,87 @@ flux:
     remove: ""
     input:
       - googlenewsen:"Lifetime value"
+    keep_only: ""
+  - id: google_news_fr
+    description: Les news en une de Google News France
+    remove: ""
+    input:
+      - googlenewsfr
+    keep_only: ""
+  - id: google_news_us
+    description: Les news en une de Google News US
+    remove: ""
+    input:
+      - googlenewsen
+    keep_only: ""
+  - id: mediapart
+    description: mediapart
+    remove: ""
+    input:
+      - https://www.mediapart.fr/articles/feed
+    keep_only: ""
+  - id: mediapart_podcasts
+    description: podcasts de mediapart
+    remove: ""
+    input:
+      - https://www.mediapart.fr/journal/podcasts/rss
+    keep_only: ""
+  - id: mediapart_vidéos
+    description: Vidéos de médiapart
+    remove: ""
+    input:
+      - www.youtube.com/user/mediapart/
+    keep_only: ""
+  - id: lemonde_toutes_rubriques
+    description: Le Monde - Tous les derniers articles
+    remove: ""
+    input:
+      - https://www.lemonde.fr/rss/une.xml
+      - https://www.lemonde.fr/international/rss_full.xml
+      - https://www.lemonde.fr/economie/rss_full.xml
+      - https://www.lemonde.fr/politique/rss_full.xml
+      - https://www.lemonde.fr/culture/rss_full.xml
+      - https://www.lemonde.fr/sport/rss_full.xml
+      - https://www.lemonde.fr/planete/rss_full.xml
+      - https://www.lemonde.fr/pixels/rss_full.xml
+      - https://www.lemonde.fr/sciences/rss_full.xml
+      - https://www.lemonde.fr/idees/rss_full.xml
+      - https://www.lemonde.fr/m-le-mag/rss_full.xml
+      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
+      - https://www.lemonde.fr/societe/rss_full.xml
+      - https://www.lemonde.fr/rss/en_continu.xml
+      - https://www.lemonde.fr/ameriques/rss_full.xml
+      - https://www.lemonde.fr/asie-pacifique/rss_full.xml
+      - https://www.lemonde.fr/afrique/rss_full.xml
+    keep_only: ""
+  - id: newyorktimes_une
+    description: La une du New York Times
+    remove: ""
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+    keep_only: ""
+  - id: newyorktimes_tout
+    description: Tous les derniers articles du New York Times
+    remove: ""
+    input:
+      - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+      - https://www.nytimes.com/services/xml/rss/nyt/Health.xml
+      - https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml
+    keep_only: ""
+  - id: fact_checking
+    description: Les Décodeurs, Checknews, les Surligneurs, ...
+    remove: ""
+    input:
+      - https://www.lemonde.fr/les-decodeurs/rss_full.xml
+      - http://rss.liberation.fr/rss/100893/
+      - https://lessurligneurs.eu/feed/
+      - https://www.rtl.fr/podcast/fact-checking.xml
+      - http://radiofrance-podcast.net/podcast09/rss_12249.xml
+      - https://www.youtube.com/channel/UCRAbwEqGDnUBt_gPOkplGBA/videos
+      - https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
     keep_only: ""
