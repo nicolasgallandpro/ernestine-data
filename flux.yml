@@ -1,6 +1,7 @@
 flux:
   - id: tribunes&opinions
     description: Les tribunes du moment, tous journaux confondus
+    tags: "#hp"
     remove: Tribune de Genève AND Tribune de Lyon AND Groupe Capitales AND latribune
       AND tribune du stade AND herault-tribune.com
     input:
@@ -12,6 +13,7 @@ flux:
     keep_only: ""
   - id: Inrap_musees
     description: inrap
+    tags: "#hp"
     remove: ""
     input:
       - https://www.inrap.fr/rss.xml
@@ -19,6 +21,7 @@ flux:
     keep_only: ""
   - id: utopies&innovation_sociale
     description: Corporate Rebels, Wedemain, Reporterre, ...
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/channel/UCm5wThREh298TkK8hCT9HuA
@@ -34,6 +37,7 @@ flux:
     keep_only: ""
   - id: medias_independants
     description: basta, reporterre, heidinews...
+    tags: "#hp"
     remove: ""
     input:
       - https://www.bastamag.net/spip.php?page=backend
@@ -56,11 +60,12 @@ flux:
       - https://www.heidi.news/innovation.rss
       - https://www.heidi.news/culture.rss
       - https://www.heidi.news/education.rss
-      - https://www.lesnouvellesnews.fr/feed/
-      - "https://reflets.info/feeds/public\r"
+      - https://reflets.info/feeds/public
+      - https://www.lesnouvellesnews.fr/feed
     keep_only: ""
   - id: journalisme_de_solution
     description: Carenews, Impact(s), ...
+    tags: "#hp"
     remove: ""
     input:
       - https://www.carenews.com/acteur-rss/59986
@@ -73,6 +78,7 @@ flux:
     keep_only: ""
   - id: societe&futur
     description: usbek, wedemain, ...
+    tags: "#hp"
     remove: ""
     input:
       - https://usbeketrica.com/rss
@@ -84,6 +90,7 @@ flux:
     keep_only: ""
   - id: videos_actu
     description: Les vidéos d'actu généraliste
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://www.lemonde.fr/videos/rss_full.xml
@@ -92,12 +99,14 @@ flux:
     keep_only: ""
   - id: one_zero
     description: tech and science
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://onezero.medium.com/feed
     keep_only: ""
   - id: science
     description: Vidéos, podcasts et articles sur la science
+    tags: "#hp"
     remove: ""
     input:
       - podcasts_science
@@ -106,6 +115,7 @@ flux:
     keep_only: ""
   - id: podcasts_science
     description: Les podcasts scientifiques en français
+    tags: "#science #hp"
     remove: ""
     input:
       - http://radiofrance-podcast.net/podcast09/rss_14312.xml
@@ -113,6 +123,7 @@ flux:
     keep_only: ""
   - id: videos_science
     description: Les chaines youtube scientifiques en français
+    tags: "#science #video"
     remove: ""
     input:
       - https://www.youtube.com/channel/UCcziTK2NKeWtWQ6kB5tmQ8Q
@@ -129,6 +140,7 @@ flux:
     keep_only: ""
   - id: presse_science
     description: Blogs, sites et newspapers scientifiques
+    tags: "#science"
     remove: bon plan
     input:
       - https://www.lemonde.fr/sciences/rss_full.xml
@@ -138,18 +150,21 @@ flux:
     keep_only: ""
   - id: nyt_science
     description: New York Times - Science
+    tags: "#hp"
     remove: coronavirus live update AND live coronavirus
     input:
       - https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
     keep_only: ""
   - id: hacker_news
     description: ""
+    tags: "#hp"
     remove: ""
     input:
       - https://news.ycombinator.com/rss
     keep_only: ""
   - id: datascience
     description: ""
+    tags: "#data #hp"
     remove: ""
     input:
       - https://towardsdatascience.com/feed
@@ -158,6 +173,7 @@ flux:
     keep_only: ""
   - id: paleoanthropology
     description: Dernières news sur la paléoantropologie (anglophone)
+    tags: "#science #hp"
     remove: explica AND gizmodo AND discovermagazine AND tor.com
     input:
       - googlenewsen:"hominins"
@@ -166,6 +182,7 @@ flux:
     keep_only: ""
   - id: archeologie
     description: ""
+    tags: "#science #hp"
     remove: ""
     input:
       - googlenewsen:archaeologist
@@ -174,12 +191,14 @@ flux:
     keep_only: ""
   - id: paleogenetics
     description: ""
+    tags: "#science #hp"
     remove: explica AND gizmodo AND i24news
     input:
       - googlenewsen:paleogenetics
     keep_only: ""
   - id: datajournalism&dataviz
     description: Data journalisme (anglophone)
+    tags: "#data #science #hp"
     remove: ""
     input:
       - https://datajournalism.com/read/rss/longreads.xml
@@ -191,6 +210,7 @@ flux:
     keep_only: ""
   - id: notebooks
     description: jupyter / zeppelin / polynote
+    tags: "#data #science #hp"
     remove: ""
     input:
       - googlenewsen:"jupyter"
@@ -199,12 +219,14 @@ flux:
     keep_only: ""
   - id: videos_france_culture
     description: Les vidéos de France Culture
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/user/FranceCulture
     keep_only: ""
   - id: videos_histoire
     description: Les vidéos des youtubers d'histoire (@notabene, ...)
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/user/notabenemovies
@@ -215,6 +237,7 @@ flux:
     keep_only: ""
   - id: product_management
     description: Articles (thiga, octo, ...) et conférences sur le product management
+    tags: "#hp"
     remove: ""
     input:
       - https://blog.thiga.co/feed/
@@ -223,30 +246,35 @@ flux:
     keep_only: ""
   - id: france_inter
     description: La une de France Inter
+    tags: "#hp"
     remove: ""
     input:
       - https://www.franceinter.fr/rss/a-la-une.xml
     keep_only: ""
   - id: videos_arte_decouverte
     description: Les vidéos youtube d'Arte découverte
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/user/ARTE
     keep_only: ""
   - id: videos_arte
     description: Les vidéos youtube d'Arte
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/user/ARTEplus7
     keep_only: ""
   - id: creativite
     description: Articles et vidéos pour éveiller votre créativité
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/channel/UC5JNoczz7kh4jZ-9mtq0yJQ
     keep_only: ""
   - id: tech_et_jeux
     description: MKBHD, Nowtech, Pixels, ...
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/channel/UCVwG9JHqGLfEO-4TkF-lf2g
@@ -258,6 +286,7 @@ flux:
     keep_only: ""
   - id: videos_science&culture_generale
     description: Vidéos sur la science, l'histoire, la linguistique, ...
+    tags: "#hp"
     remove: ""
     input:
       - videos_science
@@ -266,6 +295,7 @@ flux:
     keep_only: ""
   - id: covid_science
     description: Les news scientifiques sur le Covid
+    tags: "#science #covid #hp"
     remove: ""
     input:
       - presse_science
@@ -279,6 +309,7 @@ flux:
     keep_only: covid OR corona OR coronavirus OR sars
   - id: covid_preprints
     description: Les news sur les derniers preprints sur le covid
+    tags: "#science #covid #hp"
     remove: ""
     input:
       - covid_preprint_en
@@ -286,6 +317,7 @@ flux:
     keep_only: ""
   - id: covid_preprint_en
     description: ""
+    tags: "#science #covid "
     remove: i24news
     input:
       - googlenewsen:preprint covid
@@ -294,12 +326,14 @@ flux:
       healthnewsreview.org OR healthnewsreview.org OR www.the-scientist.com
   - id: covid_preprint_fr
     description: ""
+    tags: "#science #covid"
     remove: i24news
     input:
       - googlenewsfr:preprint covid
     keep_only: ""
   - id: covid_interessant
     description: ""
+    tags: ""
     remove: i24news
     input:
       - covid_science
@@ -307,6 +341,7 @@ flux:
     keep_only: covid
   - id: dev
     description: Articles et vidéos sur le développement logiciel
+    tags: "#hp"
     remove: ""
     input:
       - https://www.youtube.com/channel/UCsVPQfo5RZErDL41LoWvk0A
@@ -320,12 +355,21 @@ flux:
     keep_only: ""
   - id: lemonde_science
     description: ""
+    tags: ""
     remove: ""
     input:
       - lemonde_toutes_rubriques
     keep_only: science OR scientifique
+  - id: contact_tracing_en
+    description: ""
+    tags: ""
+    remove: ""
+    input:
+      - googlenewsen:contact tracing
+    keep_only: ""
   - id: unit_economics
     description: ""
+    tags: ""
     remove: ""
     input:
       - googlenewsen:"unit economics"
@@ -333,36 +377,42 @@ flux:
     keep_only: ""
   - id: _datajournalism&dataviz
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://whatsnewinpublishing.com/feed/
     keep_only: charts OR dataviz OR data visual OR data journalism
   - id: lemonde_une
     description: La une du Monde
+    tags: "#presseGeneraliste #hp"
     remove: ""
     input:
       - https://www.lemonde.fr/rss/une.xml
     keep_only: ""
   - id: covid_data
     description: ""
+    tags: ""
     remove: ""
     input:
       - googlenewsen:data covid
     keep_only: ""
   - id: ultra_trail_fr
     description: ""
+    tags: ""
     remove: lci AND figaro AND i24news AND lesechos
     input:
       - googlenewsfr:"ultra trail"
     keep_only: ""
   - id: ultra_trail_en
     description: ""
+    tags: ""
     remove: ""
     input:
       - googlenewsen:"ultra trail"
     keep_only: ""
   - id: ultra_trail
     description: ""
+    tags: ""
     remove: ""
     input:
       - ultra_trail_fr
@@ -370,6 +420,7 @@ flux:
     keep_only: ""
   - id: _product_videos
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://www.youtube.com/user/GotoConferences
@@ -377,6 +428,7 @@ flux:
     keep_only: product
   - id: product_videos
     description: "mind the product, lpc, "
+    tags: ""
     remove: ""
     input:
       - https://www.youtube.com/channel/UCiT1BmYvOBsEvU9iw0076Sw
@@ -389,6 +441,7 @@ flux:
     keep_only: ""
   - id: _product
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://blog.octo.com/feed/
@@ -398,6 +451,7 @@ flux:
     keep_only: product management OR product manager
   - id: economie
     description: Economie
+    tags: "#hp"
     remove: ""
     input:
       - googlenewsen:economist
@@ -406,8 +460,23 @@ flux:
       - https://www.youtube.com/channel/UCu6mFdACj_quODcUujiT62Q/videos
       - https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ
     keep_only: ""
+  - id: stopcovid
+    description: Les dernières évolutions sur l'appli StopCovid
+    tags: "#covid #hp"
+    remove: ""
+    input:
+      - googlenewsfr:stopcovid
+    keep_only: ""
+  - id: test
+    description: ""
+    tags: ""
+    remove: ""
+    input:
+      - http://rss.liberation.fr/rss/18/
+    keep_only: ""
   - id: test2
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://blog.octo.com/feed/
@@ -416,24 +485,28 @@ flux:
     keep_only: florence aubenas
   - id: test_reporterre
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://reporterre.net/spip.php?page=backend-simple
     keep_only: ""
   - id: tribunes_economistes
     description: Tribunes d'économistes
+    tags: "#hp"
     remove: ""
     input:
       - tribunes&opinions
     keep_only: économiste
   - id: tribunes_utopies
     description: Tribunes sur les sujets de l'utopie, de l'économie sociale, ou des communs
+    tags: "#hp"
     remove: ""
     input:
       - tribunes&opinions
     keep_only: utopi OR économie sociale OR communs OR participati OR cooperati
   - id: _utopies_filtres
     description: ""
+    tags: ""
     remove: ""
     input:
       - https://www.politis.fr/rss.xml
@@ -442,18 +515,21 @@ flux:
       participative OR participatif OR utopi
   - id: tribunes_stopcovid
     description: Tribunes publiées en rapport avec l'app stopcovid
+    tags: ""
     remove: ""
     input:
       - tribunes&opinions
     keep_only: stopcovid
   - id: nicolas_colin
     description: dessous des cartes, numériques et la chine
+    tags: ""
     remove: choléra
     input:
       - googlenewsfr:"nicolas colin"
     keep_only: ""
   - id: lemonde_jo
     description: Le monde - selection Josephine
+    tags: "#hp"
     remove: ""
     input:
       - https://www.lemonde.fr/les-decodeurs/rss_full.xml
@@ -463,12 +539,14 @@ flux:
     keep_only: ""
   - id: pm_insider
     description: pm insider - medium
+    tags: ""
     remove: ""
     input:
       - https://medium.com/feed/pminsider
     keep_only: ""
   - id: capitalocene
     description: Capitalocène - FR et EN
+    tags: "#hp"
     remove: ""
     input:
       - googlenewsfr:"capitalocene"
@@ -476,12 +554,14 @@ flux:
     keep_only: ""
   - id: replicables
     description: replicables
+    tags: "#hp"
     remove: ""
     input:
       - https://www.shareable.net/feed/
     keep_only: ""
   - id: data_catalog
     description: spécial
+    tags: ""
     remove: coleofduty AND Data Catalog Market
     input:
       - googlenewsen:"data catalog"
@@ -489,18 +569,21 @@ flux:
     keep_only: data catalog
   - id: data_dashboard
     description: spécial
+    tags: ""
     remove: ""
     input:
       - https://medium.com/feed/tag/data
     keep_only: dashboard
   - id: bidonville
     description: ""
+    tags: "#weco"
     remove: ""
     input:
       - googlenewsfr:bidonville
     keep_only: bidonville
   - id: community_land_trust
     description: ""
+    tags: "#weco"
     remove: ""
     input:
       - googlenewsen:"Community Land Trust"
@@ -508,66 +591,77 @@ flux:
     keep_only: ""
   - id: organisme_foncier_solidaire
     description: ""
+    tags: "#weco"
     remove: ""
     input:
       - googlenewsfr:"Organisme Foncier Solidaire"
     keep_only: ""
   - id: weco
     description: ""
+    tags: "#weco"
     remove: ""
     input:
       - googlenewsfr:"weco" solidaire
     keep_only: ""
   - id: bugs
     description: ""
+    tags: ""
     remove: ""
     input:
       - http://www.lcp.fr/taxonomy/term/1857/all/feed
     keep_only: ""
   - id: bayesian
     description: ""
+    tags: "#hp"
     remove: ""
     input:
       - googlenewsen:"Bayesian inference"
     keep_only: ""
   - id: ltv
     description: ""
+    tags: ""
     remove: ""
     input:
       - googlenewsen:"Lifetime value"
     keep_only: ""
   - id: google_news_fr
     description: Les news en une de Google News France
+    tags: "#hp #actu"
     remove: ""
     input:
       - googlenewsfr
     keep_only: ""
   - id: google_news_us
     description: Les news en une de Google News US
+    tags: "#hp #actu"
     remove: ""
     input:
       - googlenewsen
     keep_only: ""
   - id: mediapart
     description: mediapart
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://www.mediapart.fr/articles/feed
     keep_only: ""
   - id: mediapart_podcasts
     description: podcasts de mediapart
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://www.mediapart.fr/journal/podcasts/rss
     keep_only: ""
   - id: mediapart_vidéos
     description: Vidéos de médiapart
+    tags: "#actu #hp"
     remove: ""
     input:
       - www.youtube.com/user/mediapart/
     keep_only: ""
   - id: lemonde_toutes_rubriques
     description: Le Monde - Tous les derniers articles
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://www.lemonde.fr/rss/une.xml
@@ -590,12 +684,14 @@ flux:
     keep_only: ""
   - id: newyorktimes_une
     description: La une du New York Times
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
     keep_only: ""
   - id: newyorktimes_tout
     description: Tous les derniers articles du New York Times
+    tags: "#actu #hp"
     remove: ""
     input:
       - https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
@@ -609,6 +705,7 @@ flux:
     keep_only: ""
   - id: fact_checking
     description: Les Décodeurs, Checknews, les Surligneurs, ...
+    tags: "#hp"
     remove: ""
     input:
       - https://www.lemonde.fr/les-decodeurs/rss_full.xml
