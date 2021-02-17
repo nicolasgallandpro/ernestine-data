@@ -41,6 +41,7 @@ flux:
     remove: ""
     input:
       - https://www.bastamag.net/spip.php?page=backend
+      - https://lagedefaire-lejournal.fr/feed/
       - https://reporterre.net/spip.php?page=backend-simple
       - https://lagedefaire-lejournal.fr/feed/
       - https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ
