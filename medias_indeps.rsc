@@ -41,3 +41,6 @@ categories:
       - 'predicta lab' : 'https://predictalab.medium.com/feed'
       - 'Tom Nicholas' : 'https://www.youtube.com/playlist?list=PLIVcDWpMT7KfTCsp2It3EVmMwG2C7CfPf'
       - 'In Extenso' : 'https://feeds.acast.com/public/shows/in-extenso'
+      - 'Xavier Tytelman - Ukraine' : 'https://www.youtube.com/channel/UCBiAHZy9Gghpt0JyDaz3SYw'
+      - 'The Markup' : 'https://themarkup.org/feeds/rss.xml'
+      - 'Backseat' : 'https://www.youtube.com/channel/UC2ijB3_Fg2pIW1g6FeIiYKA'
