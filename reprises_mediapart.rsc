@@ -6,4 +6,4 @@ categories:
   - name: 'reprises mediapart'
     feeds:
       - 'google news mediapart' : 'googlenews-fr-fr: mediapart'
-        'keep_only': "'mediapart' not in url"
+        'keep_only': "'mediapart' not in source"
