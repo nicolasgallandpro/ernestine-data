@@ -9,7 +9,7 @@ categories:
       - 'basta' : 'https://www.bastamag.net/spip.php?page=backend'
       - "l'age de faire" : 'https://lagedefaire-lejournal.fr/feed/'
       - 'reporterre' : 'https://reporterre.net/spip.php?page=backend-simple'
-      - 'thikerview' : 'https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ'
+      - 'thinkerview' : 'https://www.youtube.com/channel/UCQgWpmt02UtJkyO32HGUASQ'
       - 'osons causer' : 'https://www.youtube.com/channel/UCVeMw72tepFl1Zt5fvf9QKQ'
       - 'là bas' : 'https://la-bas.org/spip.php?page=backend'
       - 'le vent se lève' : 'https://lvsl.fr/feed/'
