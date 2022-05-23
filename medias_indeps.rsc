@@ -19,6 +19,7 @@ categories:
       - 'institut rousseau' : 'https://www.institut-rousseau.fr/feed/'
       - 'fakir' : 'https://www.fakirpresse.info/spip.php?page=backend'
       - 'heidi news' : 'https://www.heidi.news/articles.rss'
+        'keep_only': "'Suisse' not in text and 'canton' not in text"
       - 'reflets' : 'https://reflets.info/feeds/public'
       - 'les nouvelles news' : 'https://www.lesnouvellesnews.fr/feed'
       - 'les jours' : 'https://lesjours.fr/rss.xml'
