@@ -7,13 +7,12 @@ categories:
     feeds :
       - 'le monde pixels': https://www.lemonde.fr/pixels/rss_full.xml
       - 'le monde planete': https://www.lemonde.fr/planete/rss_full.xml
-      - 'chaine youtube x': https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
-      - 'chaine youtube y': https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
+      - 'defakator': https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
+      - 'le blob': https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
       - 'stat news': https://www.statnews.com/feed/
       - 'blog le monde realites biomedicales': https://www.lemonde.fr/blog/realitesbiomedicales/feed/
       - 'nyt science': https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
-      - 'podcast x': http://radiofrance-podcast.net/podcast09/rss_14312.xml
-      - 'podcast y': http://radiofrance-podcast.net/podcast09/rss_20902.xml   #commentaire 
+      - 'La méthode scientifique': http://radiofrance-podcast.net/podcast09/rss_14312.xml
       - 'google news paleoanthropologie fr': 'googlenews-fr-fr: paléoanthropologie'
       - 'the conversation fr' : 'https://theconversation.com/fr/articles.atom'
       - 'the conversation ca-fr' : 'https://theconversation.com/ca-fr/home-page/articles.atom'
