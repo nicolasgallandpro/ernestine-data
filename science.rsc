@@ -17,3 +17,4 @@ categories:
       - 'the conversation fr' : 'https://theconversation.com/fr/articles.atom'
       - 'the conversation ca-fr' : 'https://theconversation.com/ca-fr/home-page/articles.atom'
       - 'the conversation us' : 'https://theconversation.com/us/home-page/articles.atom'
+      - 'freethink': 'https://www.freethink.com/feed/all'
