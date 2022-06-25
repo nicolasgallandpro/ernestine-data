@@ -47,3 +47,4 @@ categories:
       - 'Backseat' : 'https://www.youtube.com/channel/UC2ijB3_Fg2pIW1g6FeIiYKA'
       - 'The Pudding' : 'https://feeds.feedburner.com/pudding/feed'
       - 'poliverse' : 'https://poliverse.fr/index.xml'
+      - "Centre d'observation de la société" : 'https://www.observationsociete.fr/feed/'
