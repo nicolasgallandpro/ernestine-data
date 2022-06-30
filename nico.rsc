@@ -6,7 +6,6 @@ categories:
   - 'name': 'mes trucs'
     feeds :
       - 'le monde pixels': https://www.lemonde.fr/pixels/rss_full.xml
-      - 'le monde planete': https://www.lemonde.fr/planete/rss_full.xml
       - 'defakator': https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
       - 'le blob': https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
       - 'La méthode scientifique': http://radiofrance-podcast.net/podcast09/rss_14312.xml
