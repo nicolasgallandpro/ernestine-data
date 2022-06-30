@@ -9,8 +9,6 @@ categories:
       - 'le monde planete': https://www.lemonde.fr/planete/rss_full.xml
       - 'defakator': https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
       - 'le blob': https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA
-      - 'stat news': https://www.statnews.com/feed/
-      - 'nyt science': https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
       - 'La méthode scientifique': http://radiofrance-podcast.net/podcast09/rss_14312.xml
       - 'google news paleoanthropologie fr': 'googlenews-fr-fr: paléoanthropologie'
       - 'freethink': 'https://www.freethink.com/feed/all'
@@ -41,7 +39,6 @@ categories:
       - 'hominins google news': 'googlenews-en-en: hominins'
       - 'nightingale': 'https://medium.com/feed/nightingale'
       - 'flowind data': 'https://flowingdata.com/feed'
-      - 'google news archeologist': 'googlenews-en-en: archeologist'
       - 'datajournalism.com': 'https://datajournalism.com/read/rss/longreads.xml'
       - 'boneless archeologie': 'https://www.youtube.com/channel/UC7ktqoCpxEbP9TV-xQLTonQ'
       - 'revues du monde': 'https://www.youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg/videos'
