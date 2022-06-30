@@ -41,7 +41,6 @@ categories:
       - 'datajournalism.com': 'https://datajournalism.com/read/rss/longreads.xml'
       - 'boneless archeologie': 'https://www.youtube.com/channel/UC7ktqoCpxEbP9TV-xQLTonQ'
       - 'revues du monde': 'https://www.youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg/videos'
-      - 'pixels': 'https://www.lemonde.fr/pixels/rss_full.xml'
       - 'octo': 'https://blog.octo.com/feed/'
       - 'stupid economics': 'https://www.youtube.com/channel/UCyJDHgrsUKuWLe05GvC2lng'
       - 'low tech lab': 'https://www.youtube.com/channel/UCu6mFdACj_quODcUujiT62Q/videos'
