@@ -30,7 +30,6 @@ categories:
       - 'eons': 'https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA'
       - 'fouloscopie': 'https://www.youtube.com/channel/UCLXDNUOO3EQ80VmD9nQBHPg'
       - 'musee de l homme': 'https://www.youtube.com/channel/UCbHsA55OzOmGgHKMMyP1wAQ/videos'
-      - 'le blob': 'https://www.youtube.com/channel/UC3E2DhYIqnoc6H3WXwTVnlA'
       - 'futura sciences': 'https://www.futura-sciences.com/rss/actualites.xml'
       - 'andreas kretz': 'https://www.youtube.com/channel/UCY8mzqqGwl5_bTpBY9qLMAA'
       - 'cedric jurassik': 'https://www.youtube.com/channel/UCpZODzFU3297WtWnnB8j6vQ'
