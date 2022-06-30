@@ -19,7 +19,6 @@ categories:
       - 'osons causer' : 'https://www.youtube.com/channel/UCVeMw72tepFl1Zt5fvf9QKQ'
       - 'Tom Nicholas' : 'https://www.youtube.com/playlist?list=PLIVcDWpMT7KfTCsp2It3EVmMwG2C7CfPf'
       - 'The Pudding' : 'https://feeds.feedburner.com/pudding/feed'
-      - 'The Pudding' : 'https://feeds.feedburner.com/pudding/feed'
       - 'inrap': 'https://www.inrap.fr/rss.xml'
       - 'corporate rebels': 'https://corporate-rebels.com/rss/'
       - 'hominins google news': 'googlenews-en-en: data-artist'
