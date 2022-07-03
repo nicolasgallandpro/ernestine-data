@@ -43,3 +43,6 @@ categories:
       - 'stupid economics': 'https://www.youtube.com/channel/UCyJDHgrsUKuWLe05GvC2lng'
       - 'low tech lab': 'https://www.youtube.com/channel/UCu6mFdACj_quODcUujiT62Q/videos'
       - 'heureka': 'https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ'
+      - "nextimpact - economie" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=6'
+      - "nextimpact - droit" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=5'
+      - "nextimpact - culture numerique" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=7'
