@@ -48,3 +48,6 @@ categories:
       - 'The Pudding' : 'https://feeds.feedburner.com/pudding/feed'
       - 'poliverse' : 'https://poliverse.fr/index.xml'
       - "Centre d'observation de la société" : 'https://www.observationsociete.fr/feed/'
+      - "nextimpact - economie" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=6'
+      - "nextimpact - droit" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=5'
+      - "nextimpact - culture numerique" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=7'
