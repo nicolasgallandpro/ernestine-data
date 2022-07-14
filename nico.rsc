@@ -3,7 +3,7 @@ name: nico
 description: 'sciences, tech, innov, economie, etc'
 max_age_minutes: 1440  #1440 min = 24h
 categories:
-  - 'name': 'mes trucs'
+  - 'name': 'Sciences, tech, innov, economie'
     feeds :
       - 'le monde pixels': https://www.lemonde.fr/pixels/rss_full.xml
       - 'defakator': https://www.youtube.com/channel/UCU0FhLr6fr7U9GOn6OiQHpQ
