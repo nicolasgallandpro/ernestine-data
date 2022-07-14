@@ -34,6 +34,7 @@ categories:
       - 'cedric jurassik': 'https://www.youtube.com/channel/UCpZODzFU3297WtWnnB8j6vQ'
       - 'sapiens': 'https://www.sapiens.org/category/archaeology/feed/'
       - 'hominins google news': 'googlenews-en-en: hominins'
+      - 'solarpunk google news': 'googlenews-en-en: solarpunk'
       - 'nightingale': 'https://medium.com/feed/nightingale'
       - 'flowind data': 'https://flowingdata.com/feed'
       - 'datajournalism.com': 'https://datajournalism.com/read/rss/longreads.xml'
