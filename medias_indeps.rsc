@@ -18,8 +18,15 @@ categories:
       - 'acrimed' : 'https://www.acrimed.org/spip.php?page=backend'
       - 'institut rousseau' : 'https://www.institut-rousseau.fr/feed/'
       - 'fakir' : 'https://www.fakirpresse.info/spip.php?page=backend'
-      - 'heidi news' : 'https://www.heidi.news/articles.rss'
+      - 'heidi news innov': 'https://www.heidi.news/innovation.rss'
         'keep_only': "'Suisse' not in text and 'canton' not in text"
+      - 'heidi news sciences': 'https://www.heidi.news/sciences.rss'
+        'keep_only': "'Suisse' not in text and 'canton' not in text"
+      - 'futura - espace' : 'https://www.futura-sciences.com/rss/espace/actualites.xml'
+      - 'futura - santé' : 'https://www.futura-sciences.com/rss/sante/actualites.xml'
+      - 'futura - dossiers' : 'https://www.futura-sciences.com/rss/dossiers.xml'
+      - 'futura - environnement' : 'https://www.futura-sciences.com/rss/environnement/actualites.xml'
+      - 'futura - nature' : 'https://www.futura-sciences.com/rss/nature/actualites.xml'
       - 'reflets' : 'https://reflets.info/feeds/public'
       - 'les nouvelles news' : 'https://www.lesnouvellesnews.fr/feed'
       - 'les jours' : 'https://lesjours.fr/rss.xml'
