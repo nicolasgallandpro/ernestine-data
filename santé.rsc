@@ -20,3 +20,9 @@ categories:
       - 'heidi news - santé' : 'https://www.heidi.news/sante.rss'
       - 'futura - santé news' : 'https://www.futura-sciences.com/rss/sante/actualites.xml'
       - 'futura - santé dossiers' : 'https://www.futura-sciences.com/rss/sante/dossiers.xml'
+      - 'google news tribunes hopital' : 'googlenews-fr-fr: tribune hopital'
+        'keep_only': "'tribune' not in source and 'stade' not in title and 'match' not in title and 'football' not in title"
+      - 'google news tribunes santé' : 'googlenews-fr-fr: tribune santé'
+        'keep_only': "'tribune' not in source and 'stade' not in title and 'match' not in title and 'football' not in title"
+      - 'tribunes du Monde' : 'https://www.lemonde.fr/idees-tribunes/rss_full.xml'
+        'keep_only': "'hôpital' in text"
