@@ -8,7 +8,9 @@ categories:
       - 'stat news': https://www.statnews.com/feed/
       - 'blog le monde realites biomedicales': https://www.lemonde.fr/blog/realitesbiomedicales/feed/
       - 'nyt health': https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/health/rss.xml
-      - 'google news paleoanthropologie fr': 'googlenews-fr-fr: santé étude révèle'
+      - 'carenews handicap': 'https://www.carenews.com/taxonomy/term/27534/feed'
+      - 'magazine santé mutualiste' : 'http://www.mutualistes.com/spip.php?page=backend'
+      - 'le monde - santé' : 'https://www.lemonde.fr/sante/rss_full.xml'
       - 'the conversation fr - santé articles' : 'https://theconversation.com/fr/sante/articles.atom'
       - 'the conversation fr - santé recherche' : 'https://theconversation.com/fr/sante/news.atom'
       - 'the conversation ca-fr - santé articles' : 'https://theconversation.com/ca-fr/sante/articles.atom'
