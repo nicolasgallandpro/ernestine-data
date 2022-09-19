@@ -47,3 +47,4 @@ categories:
       - "nextimpact - economie" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=6'
       - "nextimpact - droit" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=5'
       - "nextimpact - culture numerique" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=7'
+      - "will lockett" : 'https://medium.com/@wlockett/feed'
