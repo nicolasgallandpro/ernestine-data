@@ -49,3 +49,4 @@ categories:
       - "nextimpact - culture numerique" : 'https://www.nextinpact.com/rss/params.xml?CategoryIds=7'
       - "will lockett" : 'https://medium.com/@wlockett/feed'
       - 'visual capitalist' : 'https://feeds.feedburner.com/visualcapitalist'
+      - 'stanford social innovation review' : 'https://ssir.org/site/rss_2.0'
