@@ -50,3 +50,6 @@ categories:
       - "will lockett" : 'https://medium.com/@wlockett/feed'
       - 'visual capitalist' : 'https://feeds.feedburner.com/visualcapitalist'
       - 'stanford social innovation review' : 'https://ssir.org/site/rss_2.0'
+      - 'the fediverse report' : 'https://fediversereport.com/feed/'
+      - 'google news activitypub en': 'googlenews-en-en: activitypub'
+
