@@ -52,4 +52,5 @@ categories:
       - 'stanford social innovation review' : 'https://ssir.org/site/rss_2.0'
       - 'the fediverse report' : 'https://fediversereport.com/feed/'
       - 'google news activitypub en': 'googlenews-en-en: activitypub'
+      - 'Ethan Zuckerman': 'googlenews-en-en: Ethan Zuckerman'
 
