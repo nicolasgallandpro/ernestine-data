@@ -53,4 +53,6 @@ categories:
       - 'the fediverse report' : 'https://fediversereport.com/feed/'
       - 'google news activitypub en': 'googlenews-en-en: activitypub'
       - 'Ethan Zuckerman': 'googlenews-en-en: Ethan Zuckerman'
+      - 'ecowatch': 'https://www.ecowatch.com/feed' 
+      - 'living big in a tiny house': 'https://www.youtube.com/@livingbig'
 
