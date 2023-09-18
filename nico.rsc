@@ -55,4 +55,6 @@ categories:
       - 'Ethan Zuckerman': 'googlenews-en-en: Ethan Zuckerman'
       - 'ecowatch': 'https://www.ecowatch.com/feed' 
       - 'living big in a tiny house': 'https://www.youtube.com/@livingbig'
+      - 'bill gates youtube': 'https://www.youtube.com/@billgates'
+      - 'the marginalian': 'https://feeds.feedburner.com/brainpickings/rss'
 
