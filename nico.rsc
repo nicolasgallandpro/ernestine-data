@@ -57,4 +57,5 @@ categories:
       - 'living big in a tiny house': 'https://www.youtube.com/@livingbig'
       - 'bill gates youtube': 'https://www.youtube.com/@billgates'
       - 'the marginalian': 'https://feeds.feedburner.com/brainpickings/rss'
+      - 'MIT Technology Review': 'https://www.technologyreview.com/feed/'
 
