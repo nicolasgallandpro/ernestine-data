@@ -24,7 +24,6 @@ categories:
       - 'heidi news innov': 'https://www.heidi.news/innovation.rss'
       - 'heidi news sciences': 'https://www.heidi.news/sciences.rss'
       - 'one zero': 'https://onezero.medium.com/feed'
-      - 'la methode scientifique': 'http://radiofrance-podcast.net/podcast09/rss_14312.xml'
       - 'scilabus': 'https://www.youtube.com/user/scilabus'
       - 'eons': 'https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA'
       - 'fouloscopie': 'https://www.youtube.com/channel/UCLXDNUOO3EQ80VmD9nQBHPg'
